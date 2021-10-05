@@ -1,0 +1,11 @@
+DÉBUT compteurAnes (réel prix, réel argent)
+  entier nbAnes = 0
+  SI prix > 0 ET argent > 0
+    TANT QUE 
+      argent >= prix
+      argent = argent - prix
+      nbAnes = nbAnes + 1
+    FIN TANT QUE
+  FIN SI
+  retourner nbAnes
+FIN compteurAnes
